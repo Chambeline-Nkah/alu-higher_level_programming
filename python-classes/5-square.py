@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 '''Creating a class'''
+
 
 class Square:
     '''Square class with an attribute'''

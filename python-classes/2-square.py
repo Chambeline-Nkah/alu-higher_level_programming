@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Creating a class'''
 
+
 class Square:
     '''Square class with an attribute'''
     def __init__(self, size=0):
