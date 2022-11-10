@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''ertyuiop['''
-class Square:
+class Square:  
     """
     Creates a square.
     """
