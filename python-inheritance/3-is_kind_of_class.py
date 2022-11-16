@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-'''Writing a function that checks if an object is an instance of a class or not'''
+'''Writing a function that checks
+if an object is an instance of a class or not
+'''
 
 
 def is_kind_of_class(obj, a_class):
-   '''A function that checks if an object is an instance of a class and returns true otherwise it returns false'''
+   '''A function that checks if an object is an
+   instance of a class and returns true otherwise it returns false
+   '''
    return isinstance(obj, a_class)
