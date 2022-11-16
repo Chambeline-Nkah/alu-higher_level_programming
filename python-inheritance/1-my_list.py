@@ -6,5 +6,6 @@ class MyList(list):
     '''Creating a superclass list'''
 
     def print_sorted(self):
-        new_list = self[:].sort()
+        new_list = self[:]
+        new_list.sort()
         print("{}".format(new_list))
