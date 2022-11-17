@@ -14,8 +14,8 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        '''Retrieving a dictionary representation'''
+    def to_json(self, attrs=None):
+        '''returns a dict rep of the data'''
         context = {
             'first_name': self.first_name,
             'last_name': self.last_name,
@@ -31,4 +31,3 @@ class Student:
                 if item in context.keys():
                     cont[item] = context[item]
             return cont
-  
