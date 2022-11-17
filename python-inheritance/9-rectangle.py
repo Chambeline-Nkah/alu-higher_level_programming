@@ -2,7 +2,8 @@
 '''Creating class Rectangle'''
 
 
-BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     '''Creating a class that inherits properties from BaseGeometry'''
@@ -19,5 +20,5 @@ class Rectangle(BaseGeometry):
         return self.__height * self.__width
 
     def __str__(self):
-        '''Calling a string function'''
+        '''Returns [Rectangle] '''
         return str("[Rectangle] {}/{}".format(self.__width, self.__height))
