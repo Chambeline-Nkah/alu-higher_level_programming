@@ -14,8 +14,8 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        '''Retrieving a dictionary representation'''
+    def to_json(self, attrs=None):
+        '''Returning a dictionary representation'''
         context = {
             'first_name': self.first_name,
             'last_name': self.last_name,
@@ -33,6 +33,6 @@ class Student:
             return cont
 
     def reload_from_json(self, json):
-            '''Reload_from_json'''
-            for item in json.keys():
-                self.__dict__[item] = json[item]
+        '''Reload_from_json'''
+        for item in json.keys():
+            self.__dict__[item] = json[item]
