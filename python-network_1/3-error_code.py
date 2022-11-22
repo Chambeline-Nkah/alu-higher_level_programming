@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 '''Script that takes in a URL, sends it a request and
 - displays the body of the response'''
 
