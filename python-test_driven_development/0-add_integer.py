@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """Function that adds two integers a and b
-    Both integers must be integers or floats 
+    Both integers must be integers or floats
     else raises a TypeError exception
     """
     if type(a) == float or type(b) == float:
