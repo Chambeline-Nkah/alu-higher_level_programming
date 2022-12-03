@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """Dividing all elements of a matrix where
-    - matrix must be a lists of integers or floats 
+    - matrix must be a lists of integers or floats
     - each row must be of thesame size
     - div must be a number (integer/float) and =! 0
     else raises a TypeError exception with a mssg
