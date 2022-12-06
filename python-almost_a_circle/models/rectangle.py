@@ -9,13 +9,14 @@ class Rectangle(Base):
     """Create class Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Function that initializes 
+        """Function that initializes
         the width,heigh,x,y and id and calls the super class"""
         super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+    
     @property
     def width(self):
         """Defining a function containing the width of the rectangle"""
@@ -46,8 +47,6 @@ class Rectangle(Base):
         """"Function that establishes the height with some exceptions
         - if the value is not an integer, a TypeError exception is raised
         - if the value is <= 0, a ValueError excep is raised"""
-
-
         if type(value) != int:
             raise TypeError("height must be an integer")
 
@@ -94,7 +93,7 @@ class Rectangle(Base):
         returns the area of Rectangle"""
 
         return self.height * self.width
-    
+
     def display(self):
         """Defining a display a function that prints in
         stdout the Rectangle instance with character #"""
@@ -124,14 +123,14 @@ class Rectangle(Base):
             elif len(kwargs) != 0:
                 self.id = kwargs["id"] if "id" in kwargs else self.id
                 self.width = kwargs["width"] if "width" in kwargs \
-                else self.width
-            self.height = kwargs["height"] if "height" in kwargs \
-                else self.height
-            self.x = kwargs["x"] if "x" in kwargs else self.x
-            self.y = kwargs["y"] if "y" in kwargs else self.y
+                    else self.width
+                self.height = kwargs["height"] if "height" in kwargs \
+                    else self.height
+                self.x = kwargs["x"] if "x" in kwargs else self.x
+                self.y = kwargs["y"] if "y" in kwargs else self.y
 
     def to_dictionary(self):
-        """Defining the function to_dictionary that returns 
+        """Defining the function to_dictionary that returns
         the dictionary representation of a Rectangle"""
         return {
             'id': self.id,
