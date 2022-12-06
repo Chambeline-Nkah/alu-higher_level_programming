@@ -6,35 +6,35 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Creating a square class that 
+    """Creating a square class that
     inherits from the Rectangle class"""
     def __init__(self, size, x=0, y=0, id=None):
-        """Defining a function that initializes the 
+        """Defining a function that initializes the
         size, x, y, and the id"""
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
-        """Defining a function that 
+        """Defining a function that
        returns the size of the square"""
         return self.width
 
     @size.setter
     def size(self, value):
-        """Defining a function that sets 
+        """Defining a function that sets
         the size of the square"""
         self.width = value
         self.height = value
 
     def __str__(self):
-        """Defining a function that returns 
+        """Defining a function that returns
         the string representation of the square"""
-        
+
         return "[Square] ({}) {}/{} - {}" \
             .format(self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
-        """Updating the square with some 
+        """Updating the square with some
         public methods that assigns attributes"""
         if len(args) != 0:
             try:
@@ -65,7 +65,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        """Defining a function that returns 
+        """Defining a function that returns
         the dictionary representation of a square"""
         return {
             'id': self.id,
@@ -73,4 +73,3 @@ class Square(Rectangle):
             'x': self.x,
             'y': self.y
         }
-    
