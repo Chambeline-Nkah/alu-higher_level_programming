@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Script that prints all City objects from database"""
 
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class City(Base):
-    '''A class defination of a table in the sql'''
+    """Defining class city with properties from Base"""
     __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
