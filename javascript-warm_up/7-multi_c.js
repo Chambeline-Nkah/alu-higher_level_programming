@@ -6,5 +6,4 @@ if (nm) {
   }
 } else {
   console.log('Missing number of occurences');
-  }
-
+}
