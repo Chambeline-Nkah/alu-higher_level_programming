@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const args = process.argv[2];
+const args = process.argv.length;
 switch (args) {
-  case 0:
+  case 2:
     console.log('No arguments');
     break;
-  case 1:
+  case 3:
     console.log('Argument found');
     break;
   default:
