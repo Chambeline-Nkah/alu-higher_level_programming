@@ -5,7 +5,7 @@ if (nm) {
     console.log('X'.repeat(nm));
   }
 } else if (nm < 0) {
-    console.log();
+  console.log();
 } else {
-    console.log('Missing size');
+  console.log('Missing size');
 }
