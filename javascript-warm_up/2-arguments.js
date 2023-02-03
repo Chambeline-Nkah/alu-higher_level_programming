@@ -2,12 +2,12 @@
 const args=process.argv.length;
 switch (args){
     case 2:
-        console.log("No arguments");
+        console.log('No arguments');
         break;
     case 3:
-        console.log("Arument found");
+        console.log('Argument found');
         break;
     default:
-        console.log("Arguments found");
+        console.log('Arguments found');
         break;
 }
