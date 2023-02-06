@@ -23,6 +23,5 @@ class Rectangle {
     this.width = this.width * 2;
     this.height = this.height * 2;
   }
-
 }
-export default Rectangle;
+module.exports = Rectangle;
