@@ -1,3 +1,4 @@
+#!/usr/bin/node
 module.exports = class Square extends require ('./5-square') {
   CharPrint (c) {
     const char = c || 'X';
