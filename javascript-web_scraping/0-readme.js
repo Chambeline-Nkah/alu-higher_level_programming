@@ -6,6 +6,6 @@ fs.readFile(process.argv[2], (error, content) => {
   if (error) {
     console.log(error);
   } else {
-    console.log(content);
+    console.log(content.tostring());
   }
 });
