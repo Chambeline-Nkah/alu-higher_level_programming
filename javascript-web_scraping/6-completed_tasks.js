@@ -30,4 +30,4 @@ request.get(url, (error, response) => {
     }
   });
   console.log(results);
-
+});
