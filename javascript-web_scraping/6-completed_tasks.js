@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// Writing a script that computes the number of tasks completed by user id.
 const request = require('request');
 
 function getCompletedTasks (data, userId) {

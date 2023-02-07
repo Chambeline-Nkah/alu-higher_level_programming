@@ -2,7 +2,7 @@
 // Writing a script that gets the contents of a webpage and stores it in a file
 const request = require('request');
 const fs = require('fs');
-const args = process.argv[2];
+const args = process.argv.slice(2);
 request(args[0], (error, response, body) => {
   if (error) {
     console.log(error);
