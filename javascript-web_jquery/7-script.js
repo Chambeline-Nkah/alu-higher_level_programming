@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Write a JavaScript script that fetches a character from URL
+// Writing a JavaScript script that fetches a character from URL
 $.ajax({
     url: 'https://swapi-api.hbtn.io/api/people/5/?format=json',
     type: 'GET',
