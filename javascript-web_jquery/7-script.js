@@ -1,8 +1,9 @@
 #!/usr/bin/node
+// Write a JavaScript script that fetches a character from URL
 $.ajax({
     url: 'https://swapi-api.hbtn.io/api/people/5/?format=json',
     type: 'GET',
     success: (result) => {
-      $('#character').text(result.name);
+      $('div#character').text(result.name);
     }
-  });
+});
